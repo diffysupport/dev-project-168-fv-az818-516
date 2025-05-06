@@ -1,0 +1,38 @@
+basic:
+    name: test
+    breakpoints:
+        - 640
+        - 720
+        - 1200
+        - 101
+        - 999
+        - 202
+        - 98
+    pages:
+        - 'https://point.md'
+        - 'https://point.md/ru/novosti/politika'
+        - 'https://point.md/ru/novosti/ekonomika'
+    monitoring:
+        days: {  }
+        type: daily
+        schedule_time: '02:30 AM'
+        schedule_time_zone: Europe/Dublin
+        compare_with: last
+        compare_with_fresh: production
+advanced:
+    mask: ''
+    remove: ''
+    isolate: ''
+    delay: 10
+    scroll: false
+    headers: ''
+    cookies: ''
+    custom_js: ''
+    custom_css: ''
+    mock_content: ''
+    performance:
+        workers_production: 30
+        workers_nonproduction: 10
+        workers_production_delay: 0
+        workers_nonproduction_delay: 0
+    stabilize: true
